@@ -7,6 +7,7 @@ export class Infraccion
     public fechaDeteccion: Date;
     public marca: string;
     public modelo: string;
+    public urlFoto : string;
     public datosInfraccion : DatosInfraccion;
     public propietario : Propietario;
 

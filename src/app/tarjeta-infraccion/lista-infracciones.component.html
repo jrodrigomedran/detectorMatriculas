@@ -1,0 +1,9 @@
+<div class="container contenedor-lista-infracciones">
+
+    <app-overlay-cargando [cargando]="cargando"></app-overlay-cargando>
+    <!-- LISTADO DE INFRACCIONES-->
+    <div class="row">
+        <app-tarjeta-infraccion class="col-md-4" *ngFor="let i of infracciones" [infraccion]="i"></app-tarjeta-infraccion>
+    </div>
+
+</div>
