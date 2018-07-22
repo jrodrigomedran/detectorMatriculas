@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { InfraccionService } from '../service/infraccion.service';
 import { ListaInfraccionesComponent } from '../app/tarjeta-infraccion/lista-infracciones.component';
 import { TarjetaInfraccionComponent } from '../app/tarjeta-infraccion/tarjeta-infraccion.component';
+import { InfraccionComponent } from '../app/infraccion/infraccion.component';
 import { OverlayCargandoComponent } from '../app/cargando/overlay-cargando.component';
 
 const appComponents = [

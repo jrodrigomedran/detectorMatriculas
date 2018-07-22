@@ -22,7 +22,7 @@ export class ListaInfraccionesComponent {
     this.infracciones = infracciones;
     setTimeout(()=>{
       this.cargando = false;
-    },1500);
+    },500);
   }
 
 }
