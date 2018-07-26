@@ -13,7 +13,8 @@ import { OverlayCargandoComponent } from '../app/cargando/overlay-cargando.compo
 const appComponents = [
   ListaInfraccionesComponent,
   TarjetaInfraccionComponent,
-  OverlayCargandoComponent
+  OverlayCargandoComponent,
+  InfraccionComponent
 ]
 
 @NgModule({
