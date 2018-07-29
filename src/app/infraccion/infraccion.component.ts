@@ -24,8 +24,22 @@ export class InfraccionComponent implements OnInit{
   }
 
   cargarInfraccion(matricula: string) {
-    this.infraccionService.fetchInfraccion(matricula).then((infraccion: Infraccion) => {
+    /*this.infraccionService.fetchInfraccion(matricula).then((infraccion: Infraccion) => {
       this.infraccion = infraccion;
-    });
+    });*/
+    this.infraccionService.fetchInfraccion(matricula).subscribe(
+      result => {
+        if(result.code != 200){
+          console.log(result);
+          this.infraccion = result;
+        }else{
+          console.log("code igual a 200");
+        }
+    },
+    error => {
+      console.log("entra en error");
+      console.log(<any>error);
+    }
+  );
   }
 }

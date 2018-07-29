@@ -10,6 +10,8 @@ import { TarjetaInfraccionComponent } from '../app/tarjeta-infraccion/tarjeta-in
 import { InfraccionComponent } from '../app/infraccion/infraccion.component';
 import { OverlayCargandoComponent } from '../app/cargando/overlay-cargando.component';
 
+import {HttpClientModule} from '@angular/common/http';
+
 const appComponents = [
   ListaInfraccionesComponent,
   TarjetaInfraccionComponent,
@@ -27,7 +29,8 @@ const appComponents = [
   imports: [
     BrowserModule, 
     AppBoostrapModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [InfraccionService],
   bootstrap: [AppComponent]

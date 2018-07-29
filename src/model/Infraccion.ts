@@ -11,11 +11,15 @@ export class Infraccion
     public datosInfraccion : DatosInfraccion;
     public propietario : Propietario;
 
-    static fromJson(json : any) : Infraccion {
+    constructor() {
+    }
+
+    /*static fromJson(json : any) : Infraccion {
         let infraccion = new Infraccion();
         Object.assign(infraccion, json);
         infraccion.datosInfraccion = DatosInfraccion.fromJson(json.datosInfraccion);
         infraccion.propietario = Propietario.fromJson(json.propietario);
+        infraccion.urlFoto = "../../assets/img/MATRICULAS_DETECTADAS/MATRICULA_" + infraccion.matricula + ".png";
         return infraccion;
-    }
+    }*/
 }

@@ -1,0 +1,44 @@
+<div class="container" *ngIf="infraccion">
+    <h2>Matricula del vehículo: {{ infraccion.Matricula }}</h2>
+    <div class="row">
+        <div class="col-md-8">
+            <img class="img-infracc" src="{{ infraccion.urlFoto }}">
+        </div>
+        <div class="col-md-4">
+            <div class="card card-info-infraccion">
+                <div class="card-header">Detalles:</div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><b>Fecha de detección:</b> {{ infraccion.FechaDeteccion }}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card text-white bg-success mb-3">
+                <h4 class="card-header">Datos del infractor:</h4>
+                <div class="card-body">
+                    <div class="card-text">
+                        <ul style="margin:0">
+                            <li><b>Nombre:</b> {{ infraccion.Propietario.NombreCompleto }}</li>
+                            <li><b>Dirección:</b> {{ infraccion.Propietario.Direccion }}</li>
+                            <li><b>DNI:</b> {{ infraccion.Propietario.DNI }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card text-white bg-success mb-3">
+                <h4 class="card-header">Infraccion:</h4>
+                <div class="card-body">
+                    <div class="card-text">
+                        <ul style="margin:0">
+                            <li><b>Razón:</b> {{ infraccion.Infraccion.Razon }}</li>
+                            <li><b>Fecha:</b> {{ infraccion.Infraccion.Fecha }}</li>
+                            <li><b>Procedencia:</b> {{ infraccion.Infraccion.Procedencia }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

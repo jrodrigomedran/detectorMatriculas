@@ -1,7 +1,7 @@
 import { Infraccion }  from '../model/Infraccion'
 
 export const MOCK_INFRACCIONES = [
-    Infraccion.fromJson({
+    /*Infraccion.fromJson({
         matricula : '5649JSN',
         fechaDeteccion : new Date(),
         marca : 'SEAT',
@@ -21,5 +21,5 @@ export const MOCK_INFRACCIONES = [
         marca : 'VOLKSWAGEN',
         modelo : 'POLO',
         urlFoto : '../assets/img/MATRICULAS_DETECTADAS/MATRICULA_6947FNC.png'
-    })
+    })*/
 ]

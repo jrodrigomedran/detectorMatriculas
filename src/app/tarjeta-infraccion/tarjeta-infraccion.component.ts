@@ -15,6 +15,7 @@ export class TarjetaInfraccionComponent implements OnInit {
     constructor(){}
 
     ngOnInit() {
-        this.imagen = this.infraccion.urlFoto;//+'/MATRICULA_'+this.infraccion.matricula;
+        //this.imagen = this.infraccion.urlFoto;//+'/MATRICULA_'+this.infraccion.matricula;
+        //this.imagen = "../../assets/img/MATRICULAS_DETECTADAS/MATRICULA_" + this.infraccion.matricula + ".png";
     }
 }
