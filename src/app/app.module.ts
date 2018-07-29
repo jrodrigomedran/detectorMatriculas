@@ -9,6 +9,7 @@ import { ListaInfraccionesComponent } from '../app/tarjeta-infraccion/lista-infr
 import { TarjetaInfraccionComponent } from '../app/tarjeta-infraccion/tarjeta-infraccion.component';
 import { InfraccionComponent } from '../app/infraccion/infraccion.component';
 import { OverlayCargandoComponent } from '../app/cargando/overlay-cargando.component';
+import { SafePipe } from '../safe.pipe';
 
 import {HttpClientModule} from '@angular/common/http';
 
@@ -24,7 +25,8 @@ const appComponents = [
     AppComponent,
     InicioComponent,
     routingComponents,
-    appComponents
+    appComponents,
+    SafePipe
   ],
   imports: [
     BrowserModule, 

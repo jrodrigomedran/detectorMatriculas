@@ -1,10 +1,10 @@
 <div class="card tarjeta-infraccion">
-    <img class="card-img-top" src="{{ infraccion.urlFoto }}">
+    <img class="card-img-top" [src]='imagen | safe'>
     <div class="card-body">
         <h5 class="card-title">{{ infraccion.Matricula }}</h5>
         <p class="card-text">
-            Fecha de deteccion: {{ infraccion.FechaDeteccion }}
-            <br> Marca: {{ infraccion.Marca }}, Modelo: {{ infraccion.Modelo }}
+            <b>Fecha de deteccion:</b> {{ infraccion.FechaDeteccion }}
+            <br> <b>Marca:</b> {{ infraccion.Marca }}, <b>Modelo:</b> {{ infraccion.Modelo }}
         </p>
         <a [routerLink]="['/infracciones/',infraccion.Matricula]" class="btn btn-primary">Ver detalles</a>
     </div>

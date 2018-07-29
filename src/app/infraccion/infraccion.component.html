@@ -2,19 +2,22 @@
     <h2>Matricula del vehículo: {{ infraccion.Matricula }}</h2>
     <div class="row">
         <div class="col-md-8">
-            <img class="img-infracc" src="{{ infraccion.urlFoto }}">
+            <img class="img-infracc" [src]='url | safe'>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 bg-success">
             <div class="card card-info-infraccion">
                 <div class="card-header">Detalles:</div>
                 <div class="card-body">
+                    <br>
                     <ul class="list-unstyled">
                         <li><b>Fecha de detección:</b> {{ infraccion.FechaDeteccion }}</li>
+                        <li><b>Marca:</b> {{ infraccion.Marca }}</li>
+                        <li><b>Modelo:</b> {{ infraccion.Modelo }}</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="card text-white bg-success mb-3">
+            <div class="card text-white mb-3">
                 <h4 class="card-header">Datos del infractor:</h4>
                 <div class="card-body">
                     <div class="card-text">
@@ -27,7 +30,7 @@
                 </div>
             </div>
 
-            <div class="card text-white bg-success mb-3">
+            <div class="card text-white mb-3">
                 <h4 class="card-header">Infraccion:</h4>
                 <div class="card-body">
                     <div class="card-text">
