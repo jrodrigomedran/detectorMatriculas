@@ -10,6 +10,7 @@ import { TarjetaInfraccionComponent } from '../app/tarjeta-infraccion/tarjeta-in
 import { InfraccionComponent } from '../app/infraccion/infraccion.component';
 import { OverlayCargandoComponent } from '../app/cargando/overlay-cargando.component';
 import { SafePipe } from '../safe.pipe';
+import { FormsModule } from '@angular/forms';
 
 import {HttpClientModule} from '@angular/common/http';
 
@@ -32,7 +33,8 @@ const appComponents = [
     BrowserModule, 
     AppBoostrapModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [InfraccionService],
   bootstrap: [AppComponent]
