@@ -22,7 +22,7 @@ export class InfraccionService
 
     // Para pedir a back-end
     public fetchAll(): Observable<any>{
-        console.log("entra en metodo all");
+        console.log("Petición de todas las infracciones");
         return this.http.get('http://localhost:8000/infracciones');
     }
 

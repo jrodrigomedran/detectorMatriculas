@@ -1,0 +1,22 @@
+<table class="table table-condensed table-striped table-hover lista-infracciones">
+    <thead>
+        <tr>
+            <th>Matrícula</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Infracción</th>
+            <th>Propietario</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of infracciones; let j = index" class="cursor-pointer">
+            <td> {{ i.Matricula }} </td>
+            <td> {{ i.Marca }} </td>
+            <td> {{ i.Modelo }} </td>
+            <td>
+                <img class="tipo-infraccion-icon" src="assets/img/{{ i.Infraccion.Razon }}.png" /> {{ i.Infraccion.Razon }}
+            </td>
+            <td>{{ i.Propietario.NombreCompleto }}</td>
+        </tr>
+    </tbody>
+</table>

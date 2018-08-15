@@ -12,8 +12,6 @@ export class ListaInfraccionesComponent {
 
   infracciones: Infraccion[] = [];
   cargando:  boolean = true;
-  obsInfracciones: Observable<Infraccion[]>
-  errorMessage: String;
 
   constructor(
     private infraccionService: InfraccionService,
@@ -32,7 +30,7 @@ export class ListaInfraccionesComponent {
           }
       },
       error => {
-        console.log("entra en error");
+        console.log("Error");
         console.log(<any>error);
       }
     );
